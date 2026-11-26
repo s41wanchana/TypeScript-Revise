@@ -9,3 +9,9 @@
 // 4. Expect the shop's rule to give 10, 0, and 25 respectively.
 
 // Write your attempt below.
+let discount: number | undefined = undefined;
+if (discount != undefined) {
+  console.log(discount);
+} else {
+  console.log(10);
+}
