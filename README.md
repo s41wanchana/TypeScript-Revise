@@ -15,20 +15,38 @@ Work through the numbered directories in order. Each numbered entry is one exerc
 - `11-first-steps-in-tdd/` — 3 exercises
 - `12-independent-fluency-check/` — 3 exercises
 
-## Running your work
+## ## Run an exercise in PowerShell
 
-From the workbook root in PowerShell, use Node 24 to run a file directly. For example:
+The **workbook root** is the `TypeScript Fluency` folder containing `package.json`. Use Node 24 for these exercises. On a fresh checkout, run `npm ci` once from the root to install the compiler version recorded in the lockfile.
 
-```powershell
-node ./01-run-and-inspect-typescript/01-first-run.ts
-```
-
-Check all exercise files with `tsc --noEmit` if TypeScript is installed. Otherwise use `npm exec --package=typescript@5.9.3 -- tsc --noEmit` (requires a download the first time). During a diagnostic exercise, repair the deliberate error before checking the next file. For the module exercise, import the helper using its `.ts` extension.
-
-For each browser exercise, open PowerShell in its numbered subdirectory and compile the script:
+**To see what your program prints**, open a terminal in the numbered unit folder and run the file by name. For the first exercise:
 
 ```powershell
-npm exec --package=typescript@5.9.3 -- tsc exercise.ts --target ES2022 --module none --strict --outFile exercise.js
+node .\01-first-run.ts
 ```
 
-Open the adjacent `index.html` in a browser. Recompile and refresh after each edit. Use the browser console to inspect values.
+Save after each edit. Press the up arrow and Enter in the terminal to repeat the command. A file with only comments produces no output. For the two-file catalog checkpoint, run `exercise.ts` from its own folder.
+
+**To check the types**, open a second terminal in the workbook root and run:
+
+```powershell
+npm run typecheck
+```
+
+This checks all 12 units. A successful run returns to the prompt with no compiler errors. A diagnostic includes the filename, line, error code, and message. During an exercise that asks you to cause an error, look for the filename you edited, record what the compiler caught, and repair the example.
+
+**To see diagnostics on every save**, run `npm run typecheck -- --watch` once from the root. Leave that terminal open while you work. After a repair, look for the error to disappear. Press Ctrl+C to stop watching.
+
+## Run the browser exercises in Unit 9
+
+Each exercise folder contains `exercise.ts` and `index.html`. The page loads a compiled file named `exercise.js`. From that exercise's folder, run:
+
+```powershell
+npm exec -- tsc exercise.ts --target ES2022 --module none --strict --outFile exercise.js
+```
+
+Open the adjacent HTML file in your browser. Use the form on the page and the Console tab in browser developer tools to inspect the results. After editing TypeScript, save, repeat the compile command, and refresh the page. For storage exercises, use the same browser and page for each trial so you can inspect the same stored key.
+
+## Review your work
+
+Each numbered entry is independent. When a prompt asks you to choose a rule, write your prediction before you run the case. When an exercise asks you to explain something, one sentence beside your attempt is enough. For a checkpoint, try the task using your own code, then compare your observations with the expected results. Say which files are ready for review when you want feedback.
