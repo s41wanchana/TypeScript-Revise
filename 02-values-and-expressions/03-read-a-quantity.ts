@@ -1,12 +1,16 @@
 // Read a quantity from a text field
 //
-// 1. Pretend each input is text from a form. Try an empty string, three spaces, "0", and "12".
-// 2. Decide whether the user entered anything. Print a message for a blank field and print a
-//    number for a filled field.
-// 3. Predict what would happen to the blank cases if you converted the text to a number first.
-//    Try it separately to check.
-// 4. Expect both blank inputs to print "Enter a quantity". The last two should give the
-//    numbers 0 and 12.
+// Task
+// Treat each input as text from a form. Print "Enter a quantity" for a blank field and the
+// numeric value for a filled field. Try "", "   " (three spaces), "0", and "12".
+//
+// Expected result
+// The first two inputs each print "Enter a quantity". The last two print the numbers 0 and 12.
+//
+// Experiment
+// Keep your working code. Separately, predict the numeric results for "   " and "0", then
+// convert those two values and compare them. Can you tell which field was blank from the
+// results alone? Two observations are enough. You can remove the trial afterward.
 
 // Write your attempt below.
 const inputs = ["", "0", "12"];

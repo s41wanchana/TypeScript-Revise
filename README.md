@@ -2,6 +2,10 @@
 
 Work through the numbered directories in order. Each numbered entry is one exercise. Open its TypeScript file, read the comments, and write your attempt below them. The final entry in every unit is a checkpoint. Return after a few days for a fresh variation during review.
 
+**Task** describes what to build or demonstrate. **Expected result** gives the outputs or observations you can use to check your attempt.
+
+**Experiment** appears when there is a separate comparison to try. Keep your working solution while you explore. The exercise tells you which trial changes to undo and which observations to keep.
+
 - `01-run-and-inspect-typescript/` — 4 exercises
 - `02-values-and-expressions/` — 4 exercises
 - `03-control-flow-and-functions/` — 4 exercises
@@ -15,7 +19,7 @@ Work through the numbered directories in order. Each numbered entry is one exerc
 - `11-first-steps-in-tdd/` — 3 exercises
 - `12-independent-fluency-check/` — 3 exercises
 
-## ## Run an exercise in PowerShell
+## Run an exercise in PowerShell
 
 The **workbook root** is the `TypeScript Fluency` folder containing `package.json`. Use Node 24 for these exercises. On a fresh checkout, run `npm ci` once from the root to install the compiler version recorded in the lockfile.
 

@@ -1,12 +1,12 @@
 // Trace an amount through calculation and display
 //
-// 1. Three items cost 10 satang each. Reproduce a display that incorrectly prints ฿30.00. Keep
-//    the intermediate values visible.
-// 2. Use a debugger breakpoint (a line where execution pauses) or temporary logs to inspect
-//    the unit price, total in satang, and displayed baht.
-// 3. Identify the first place where the value is treated as the wrong unit. Fix it and rerun
-//    the same case.
-// 4. Expect the total to be 30 satang and the display to read ฿0.30. Record where the two
-//    versions first differ.
+// Task
+// Reproduce an incorrect display of ฿30.00 for three items costing 10 satang each. Pause at a
+// breakpoint or log the unit price, total in satang, and displayed baht. Record the first place
+// where the unit is wrong. Repair it and rerun the same purchase.
+//
+// Expected result
+// The corrected purchase totals 30 satang and displays ฿0.30. Your observation identifies where
+// the faulty run first differed.
 
 // Write your attempt below.

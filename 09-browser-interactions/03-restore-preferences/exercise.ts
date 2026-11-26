@@ -1,12 +1,16 @@
 // Restore a saved browser preference
 //
-// 1. Choose a display preference, such as compact or roomy spacing, and a default. Use a
-//    localStorage key unique to this workbook.
-// 2. Save a nondefault setting and reload the page. Display the restored setting. Use browser
-//    developer tools to change that key between trials.
-// 3. Try removing the key, storing broken JSON, and storing an older JSON object with the
-//    setting omitted.
-// 4. Expect the saved setting after the first reload and your default in all three recovery
-//    cases. Each reload should finish without an uncaught error.
+// Task
+// Choose a display preference and a default. Save a nondefault value under a workbook-specific
+// localStorage key. Reload the page and display the restored preference. Handle missing,
+// malformed, and older saved data.
+//
+// Expected result
+// A reload restores the saved setting. A missing key, broken JSON, or a saved object missing
+// the setting gives your default without an uncaught error.
+//
+// Experiment
+// Keep the reader in place. Use browser developer tools to set up each recovery case, then
+// reload. Restore your valid preference when you finish.
 
 // Write your attempt below.

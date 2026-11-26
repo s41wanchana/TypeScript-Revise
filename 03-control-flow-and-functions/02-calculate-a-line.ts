@@ -1,10 +1,12 @@
 // Calculate one order line
 //
-// 1. Write a function that takes a numeric price and a numeric quantity and returns the line
-//    total.
-// 2. Call it with a price of 25 and quantities of 3 and 0. Call it again with only the price;
-//    the default quantity is one.
-// 3. Hover over the function and record the return type TypeScript inferred.
-// 4. Expect totals of 75, 0, and 25 in that order.
+// Task
+// Write a function that takes a numeric price and quantity and returns the line total. Use one
+// item when quantity is omitted. Call the function three times at a price of 25 and inspect its
+// inferred return type.
+//
+// Expected result
+// With quantity 3 the total is 75. With quantity 0 it is 0. With quantity omitted it is 25. The
+// editor shows a numeric return type.
 
 // Write your attempt below.
