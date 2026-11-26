@@ -3,3 +3,5 @@
 // Example: console.log("Hello"); prints Hello.
 
 // Write your attempt below.
+const branchName = "A";
+console.log(branchName);
