@@ -4,3 +4,5 @@
 // Fix it and check again.
 
 // Write your attempt below.
+
+let number: number = 4;
