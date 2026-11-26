@@ -3,3 +3,5 @@
 // Assign 4 and inspect it again.
 
 // Write your attempt below.
+let number = 3;
+number = 4;
