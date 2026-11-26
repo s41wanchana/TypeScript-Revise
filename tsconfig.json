@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "moduleDetection": "force",
+    "allowImportingTsExtensions": true,
+    "strict": true,
+    "noEmit": true
+  },
+  "include": [
+    "01-run-and-inspect-typescript/**/*.ts",
+    "02-values-and-expressions/**/*.ts",
+    "03-control-flow-and-functions/**/*.ts",
+    "04-objects-arrays-and-algorithms/**/*.ts",
+    "05-unions-and-narrowing/**/*.ts",
+    "06-reusable-types-and-modules/**/*.ts",
+    "07-async-and-errors/**/*.ts",
+    "08-http-json-and-external-data/**/*.ts",
+    "09-browser-interactions/**/*.ts",
+    "10-debugging-and-web-data/**/*.ts",
+    "11-first-steps-in-tdd/**/*.ts",
+    "12-independent-fluency-check/**/*.ts"
+  ]
+}
