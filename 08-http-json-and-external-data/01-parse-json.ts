@@ -1,10 +1,12 @@
 // Distinguish unreadable JSON from an unexpected value
 //
-// 1. Write a reader that takes text and attempts to parse JSON. Treat the parsed value as
-//    unknown until you inspect it.
-// 2. Give it three strings whose contents are: a single opening bracket, an empty pair of
-//    brackets, and the word null.
-// 3. Expect three distinct outcomes: invalid JSON, a valid empty array, and valid JSON
-//    containing a non-array. Show all three in one run.
+// Task
+// Read JSON text and treat the parsed value as unknown until you inspect it. In one run, pass
+// three strings containing the following text: a single opening bracket, an empty pair of
+// brackets, and the word null.
+//
+// Expected result
+// "[" gives a parsing failure. "[]" gives a valid empty array. "null" gives valid JSON
+// containing a non-array. Your output distinguishes all three.
 
 // Write your attempt below.

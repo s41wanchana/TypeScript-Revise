@@ -1,10 +1,15 @@
 // Add a default without losing zero
 //
-// 1. Use two test-first rounds for a default-quantity function. For each round, write a check,
-//    observe it fail, then implement the rule.
-// 2. First check that an omitted quantity gives 1. Then add a check that an explicit 0 gives
-//    0. Run both checks after each change.
-// 3. Expect both checks to pass at the end. If the second check already passes, temporarily
-//    break that rule and verify the check catches it before restoring the code.
+// Task
+// Use two test-first rounds for a default quantity. Start with a check for an omitted quantity,
+// observe its failure, and implement that rule. Add a check for explicit zero and run both
+// checks after changing the function.
+//
+// Expected result
+// An omitted quantity gives 1. Explicit zero gives 0. Both checks pass in the finished file.
+//
+// Experiment
+// If the zero check already passed when you wrote it, temporarily break that behavior. Confirm
+// the check reports the regression, then restore the working code and rerun both checks.
 
 // Write your attempt below.

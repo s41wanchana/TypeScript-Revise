@@ -1,11 +1,14 @@
 // Checkpoint — change the quantity parser's rules
 //
-// 1. Use executable checks to drive a parser. Initially accept digit strings including "01"
-//    and reject blank text. Choose how to report rejection.
-// 2. Check "0", "12", blank text, and "01". Verify all four before changing the requirement.
-// 3. Now reject numbers with leading zeros except "0" itself. Change the expectation for "01"
-//    first and record the failing result. Update the parser, then tidy it and rerun.
-// 4. Expect numeric 0 and 12 for the first two inputs. Blank and "01" should now be rejected,
-//    and every final check should pass.
+// Task
+// Drive a quantity parser with executable checks. Initially accept digit strings including "01"
+// and reject blank text. Choose how to report rejection. Check "0", "12", blank text, and "01".
+// Then change the rule to reject leading zeros except "0" itself. Update the test first, record
+// the failure, implement the change, and rerun after tidying the code.
+//
+// Expected result
+// Initially "01" gives 1. The revised check fails against the old behavior. In the finished
+// version, "0" and "12" give numeric 0 and 12. Blank text and "01" are rejected. All checks
+// pass.
 
 // Write your attempt below.

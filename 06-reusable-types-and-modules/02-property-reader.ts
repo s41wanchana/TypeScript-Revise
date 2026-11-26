@@ -1,10 +1,15 @@
 // Read a property that actually exists
 //
-// 1. Write a reusable function that accepts an object and a property name. Use keyof to limit
-//    the name to keys on that object.
-// 2. For a product with label "Tea" and price 20, read each key and inspect the result types
-//    in your editor.
-// 3. Expect "Tea" as a string and 20 as a number. Try reading "colour", record why the
-//    compiler objects, then remove the invalid call.
+// Task
+// Write a reusable property reader. Use keyof to restrict the requested name to keys on the
+// supplied object. Read the label and price of a product with label "Tea" and price 20.
+//
+// Expected result
+// Reading label gives the string "Tea". Reading price gives the number 20. Hover over both
+// results to check their types.
+//
+// Experiment
+// Temporarily request the missing key "colour". Expect a compiler diagnostic at the call.
+// Record why the call fails, then remove it.
 
 // Write your attempt below.
