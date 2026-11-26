@@ -1,10 +1,11 @@
 // Respond to a form submission
 //
-// 1. Use this folder's page. Handle submission of the order form and display feedback in the
-//    message output on the same page.
-// 2. Try spaces only, then 0, then <b>Tea</b>. For this exercise, any nonblank text is
-//    accepted. Render it using textContent.
-// 3. Expect a validation message for spaces, a visible 0 for zero, and the literal angle
-//    brackets for the last input. Submitting should keep the page open without reloading.
+// Task
+// Handle form submission on this folder's page. Show feedback in the message output without
+// reloading. Accept any nonblank text for this exercise and render it using textContent.
+//
+// Expected result
+// Spaces alone give a validation message. Entering 0 shows 0. Entering <b>Tea</b> shows those
+// characters literally, including the brackets. The form stays on the page.
 
 // Write your attempt below.

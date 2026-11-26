@@ -1,11 +1,21 @@
 // Tell a missing discount apart from a zero discount
 //
-// 1. A shop uses a 10 percent discount when no discount was supplied. Zero is a deliberate
-//    choice.
-// 2. Try undefined, 0, and 25. First choose the discount using the input as an if condition.
-//    Record all three results.
-// 3. Try again with a check specifically for a missing value. Identify the input for which the
-//    two versions disagree.
-// 4. Expect the shop's rule to give 10, 0, and 25 respectively.
+// Task
+// Choose a discount for each input. A missing discount defaults to 10 percent. An explicitly
+// supplied discount, including zero, keeps its value.
+//
+// Expected result
+// undefined gives 10, 0 gives 0, and 25 gives 25.
+//
+// Experiment
+// Keep your working rule. Separately, try using the input itself as an if condition for the
+// same three cases. Which result disagrees with the shop's rule? Keep your observation and
+// remove or comment out the trial.
 
 // Write your attempt below.
+let discount: number | undefined = undefined;
+if (discount != undefined) {
+  console.log(discount);
+} else {
+  console.log(10);
+}

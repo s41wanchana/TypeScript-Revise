@@ -1,12 +1,16 @@
 // Describe three ways a product is used
 //
-// 1. Start with a product containing an ID, name, and price. Derive the following types from
-//    that product.
-// 2. Use Pick for a list row showing ID and name. Use Omit for a new product whose ID will be
-//    assigned later.
-// 3. Use Partial for a patch (a request to change selected fields). Only name and price are
-//    editable, and either can be omitted.
-// 4. Expect a patch containing only a zero price to pass. Try a patch literal containing an ID
-//    and a new product missing its name. Check both diagnostics, then repair the examples.
+// Task
+// Start with a product containing an ID, name, and price. Derive a list row (ID and name) with
+// Pick, a new product (no generated ID yet) with Omit, and an editable patch with Partial. A
+// patch may supply name, price, or both.
+//
+// Expected result
+// A list row can omit price, a new product can omit ID, and a patch containing only a zero
+// price passes the type check.
+//
+// Experiment
+// Try a patch literal containing an ID and a new product missing its name. Look for a
+// diagnostic for each, then remove or repair the two invalid examples.
 
 // Write your attempt below.

@@ -1,12 +1,13 @@
 // Checkpoint — locate the first wrong value in an order total
 //
-// 1. An item costs 1250 satang. Reproduce a three-item display of ฿3750.00 so you have a
-//    repeatable failing case.
-// 2. Pause where the total is calculated and where it becomes display text. Record the actual
-//    value, its unit, and the expected value at each point.
-// 3. Identify the first discrepancy, repair it, and run fresh checks for zero items and one
-//    item costing one satang.
-// 4. Expect ฿37.50 for the original order, ฿0.00 for zero items, and ฿0.01 for the one-satang
-//    purchase.
+// Task
+// Reproduce the incorrect three-item display of ฿3750.00 for items costing 1250 satang each.
+// Pause at the calculation and display steps. Record the actual value, its unit, and the
+// expected value at each step. Fix the first discrepancy and check zero items and one
+// one-satang item.
+//
+// Expected result
+// The original order now shows ฿37.50. Zero items show ฿0.00, and the one-satang purchase shows
+// ฿0.01.
 
 // Write your attempt below.

@@ -1,12 +1,12 @@
 // Checkpoint — stop an older search from replacing a newer one
 //
-// 1. Simulate a search box with a variable for the visible result. Start searches for "tea"
-//    and then "toast".
-// 2. Give each fake request a promise you can finish on demand, so you control the order
-//    without relying on a timer.
-// 3. Finish toast successfully, inspect the visible result, then finish tea successfully and
-//    inspect it again. Repeat with tea failing late.
-// 4. Expect toast's result after both completions in each run. The late failure should leave
-//    the visible toast result intact.
+// Task
+// Simulate searches for "tea" and then "toast". Give each fake request a promise you can finish
+// on demand. Track the visible result. Finish toast first, then tea. Repeat with the older tea
+// request failing after toast succeeds.
+//
+// Expected result
+// As soon as toast succeeds, its result is visible. It stays visible after either a late
+// success or a late failure from tea.
 
 // Write your attempt below.

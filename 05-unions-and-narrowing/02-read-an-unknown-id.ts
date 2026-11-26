@@ -1,9 +1,11 @@
 // Read an ID from unfamiliar data
 //
-// 1. Accept an input typed unknown. You must check its shape before reading fields from it.
-// 2. Return its id only when the input is a non-array object and id is a string. Choose one
-//    result for an invalid input.
-// 3. Expect { id: "B2" } to give "B2". Try null, [], 7, {}, and { id: 7 }; each should take
-//    the invalid path without throwing.
+// Task
+// Accept unknown input. Return its id only when it is a non-array object with a string id.
+// Choose one result for invalid inputs.
+//
+// Expected result
+// { id: "B2" } gives "B2". Inputs null, [], 7, {}, and { id: 7 } all give your invalid result
+// without throwing.
 
 // Write your attempt below.

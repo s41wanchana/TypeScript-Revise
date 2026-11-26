@@ -1,12 +1,12 @@
 // Checkpoint — select orders with shortages
 //
-// 1. Use three orders in order: A requests 5 with 5 available, B requests 6 with 4 available,
-//    C requests 9 with 5 available.
-// 2. Find the first order that cannot be filled. Return its ID, or undefined if every order
-//    can be filled.
-// 3. Write a function that takes a positive minimum shortage and returns a filter callback.
-//    Keep shortages at or above that minimum.
-// 4. Expect B as the first shortage. A minimum of 2 selects B and C; a minimum of 4 selects
-//    only C. Also try an empty list.
+// Task
+// Use these orders in order: A requests 5 with 5 available, B requests 6 with 4 available, and
+// C requests 9 with 5 available. Find the first unfilled order's ID, or return undefined. Also
+// build a filter callback that selects shortages at or above a caller's positive minimum.
+//
+// Expected result
+// The first shortage is B. Minimum 2 selects B and C. Minimum 4 selects only C. With no orders,
+// the lookup gives undefined and the filter gives an empty list.
 
 // Write your attempt below.

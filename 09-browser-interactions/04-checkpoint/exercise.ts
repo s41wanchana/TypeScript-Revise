@@ -1,12 +1,12 @@
 // Checkpoint — set up and remove a form handler
 //
-// 1. Use this folder's page. Write a setup function that attaches a submit handler and returns
-//    a cleanup function for removing that handler.
-// 2. Set up the form, clean it up, and set it up again. Track handler calls using a counter
-//    visible in the browser console.
-// 3. Submit one invalid quantity such as -1. Also load the page with malformed preference text
-//    in your workbook's storage key.
-// 4. Expect one call for one submission, a visible validation message, and a usable form with
-//    default preferences after the bad saved value.
+// Task
+// Set up a quantity form with a submit handler. Return a cleanup function that removes the
+// handler. Set up, clean up, and set up again. Track calls in the console. Submit -1 and try
+// loading the page with malformed saved preferences.
+//
+// Expected result
+// One submission produces one handler call and a visible validation message. Bad saved
+// preferences give defaults and leave the form usable.
 
 // Write your attempt below.
