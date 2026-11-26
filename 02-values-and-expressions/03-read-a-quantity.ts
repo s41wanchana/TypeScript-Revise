@@ -9,3 +9,21 @@
 //    numbers 0 and 12.
 
 // Write your attempt below.
+const inputs = ["", "0", "12"];
+
+for (let item of inputs) {
+  if (item.trim()) {
+    console.log(Number(item));
+  } else {
+    console.log("Enter a quantity");
+  }
+}
+
+// for (let item of inputs) {
+//   const newInput = Number(item.trim());
+//   if (newInput) {
+//     console.log(newInput);
+//   } else {
+//     console.log("Enter a quantity");
+//   }
+// }
