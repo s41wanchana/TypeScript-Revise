@@ -1,6 +1,7 @@
 {
   "scripts": {
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "typecheck:watch": "npm run typecheck -- --watch"
   },
   "devDependencies": {
     "typescript": "^5.9.3"
